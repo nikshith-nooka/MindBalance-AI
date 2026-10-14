@@ -1,0 +1,8 @@
+{
+  "name": "MindBalance AI",
+  "description": "An intelligent mental health companion designed to support emotional well-being through AI-powered journaling, NLP-driven conversations, and mood tracking. The project focuses on providing empathetic, non-judgmental support while also encouraging users to build healthy mental habits.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

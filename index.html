@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindBalance AI</title>
+    <meta name="description" content="An intelligent mental health companion designed to support emotional well-being through AI-powered journaling, NLP-driven conversations, and mood tracking." />
+    <meta property="og:title" content="MindBalance AI" />
+    <meta property="og:description" content="An intelligent mental health companion designed to support emotional well-being through AI-powered journaling, NLP-driven conversations, and mood tracking." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#8b5cf6', // violet-500
+              secondary: '#34d399', // emerald-400
+              accent: '#f472b6', // pink-400
+              'base-100': '#ffffff', // white
+              'base-200': '#f3f4f6', // gray-100
+              'base-300': '#e5e7eb', // gray-200
+              'text-primary': '#1f2937', // gray-800
+              'text-secondary': '#6b7280', // gray-500
+            },
+            animation: {
+              'breathe': 'breathe 8s ease-in-out infinite',
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+            },
+            keyframes: {
+              breathe: {
+                '0%, 100%': { transform: 'scale(0.9)', opacity: '0.8' },
+                '50%': { transform: 'scale(1)', opacity: '1' },
+              },
+              fadeIn: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.1.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gradient-to-br from-violet-50 via-pink-50 to-emerald-50 text-text-primary font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
